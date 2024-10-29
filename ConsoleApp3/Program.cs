@@ -1,16 +1,24 @@
-﻿using System;
+﻿namespace System;
 
 class Program
 {
     static void Main()
     {
-        Console.WriteLine("Number\tSquare\tCube");
-
-        for (int i = 1; i <= 20; i++)
+        Console.WriteLine("\nEven Numbers are:");
+        for (int i = 1; i <= 50; i++)
         {
-            int square = i * i;
-            int cube = i * i * i;
-            Console.WriteLine($"{i}\t{square}\t{cube}");
+            if(i % 2 == 0){
+                Console.WriteLine(i);
+            }
+        }
+
+        Console.WriteLine("Odd Numbers are:");
+        for (int i = 1; i <= 50; i++)
+        {
+            if (i % 2 != 0)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
